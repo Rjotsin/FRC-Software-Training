@@ -6,16 +6,13 @@ import static edu.wpi.first.units.Units.KilogramSquareMeters;
 import static edu.wpi.first.units.Units.Meters;
 import static edu.wpi.first.units.Units.Volts;
 
-import com.ctre.phoenix6.configs.CurrentLimitsConfigs;
 import com.ctre.phoenix6.configs.MotionMagicConfigs;
-import com.ctre.phoenix6.configs.MotorOutputConfigs;
 import com.ctre.phoenix6.configs.Slot0Configs;
 import com.ctre.phoenix6.configs.TalonFXConfiguration;
-import com.ctre.phoenix6.signals.InvertedValue;
-import com.ctre.phoenix6.signals.NeutralModeValue;
 
 import edu.wpi.first.math.system.plant.DCMotor;
 import edu.wpi.first.units.measure.Angle;
+import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Distance;
 import edu.wpi.first.units.measure.MomentOfInertia;
 import edu.wpi.first.units.measure.Voltage;
@@ -51,4 +48,6 @@ public class BintakeConstants {
 	public static final MotionMagicConfigs PIVOT_CONFIGS_MOTION_MAGIC = new MotionMagicConfigs();
     public static final TalonFXConfiguration PIVOT_CONFIGS_TALONFX = new TalonFXConfiguration();
     public static final Slot0Configs PIVOT_CONFIGS_SLOT0 = new Slot0Configs();
+
+    public static final Current HOMING_STATOR_CURRENT_LIMIT = Amps.of(50);
 }

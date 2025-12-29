@@ -7,11 +7,15 @@ package frc.robot.subsystems;
 import org.littletonrobotics.junction.Logger;
 
 import static edu.wpi.first.units.Units.Amps;
+import static edu.wpi.first.units.Units.Celsius;
 import static edu.wpi.first.units.Units.Volts;
 import static edu.wpi.first.units.Units.Degrees;
+import static edu.wpi.first.units.Units.DegreesPerSecond;
 
 import edu.wpi.first.units.measure.Angle;
+import edu.wpi.first.units.measure.AngularVelocity;
 import edu.wpi.first.units.measure.Current;
+import edu.wpi.first.units.measure.Temperature;
 import edu.wpi.first.units.measure.Voltage;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
@@ -103,4 +107,35 @@ public class Bintake extends SubsystemBase {
     return new InstantCommand();
 }
 
+  public Voltage getIntakeVoltage() {
+    return Volts.zero();
+  }
+
+  public Voltage getPivotVoltage() {
+    return Volts.zero();
+  }
+
+  public Temperature getIntakeMotorTemp() {
+      return Celsius.zero();
+  }
+
+  public Temperature getPivotMotorTemp() {
+      return Celsius.zero();
+  }
+  
+  public Angle getPosition() {
+      return Degrees.zero();
+  }
+
+  public Angle getTargetAngle() {
+      return Degrees.zero();
+  }
+
+  public Angle getErrorDegrees() {
+      return Degrees.zero();
+  }
+
+  public AngularVelocity getPivotVelocity() {
+      return DegreesPerSecond.zero();
+  }
 }
