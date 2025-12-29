@@ -7,7 +7,7 @@ import org.littletonrobotics.junction.AutoLog;
 public interface BintakeIO {
 
     @AutoLog
-    class IntakeIOInputs {
+    class BintakeIOInputs {
         double intakeMotorVoltage = 0.0;
         double pivotMotorVoltage = 0.0;
         double intakeMotorStatorCurrent = 0.0;
@@ -27,7 +27,7 @@ public interface BintakeIO {
         // String currentCommandName = "";
     }
 
-    default void updateInputs(IntakeIOInputs inputs) {
+    default void updateInputs(BintakeIOInputs inputs) {
     }
 
     default void setIntakeVoltage(Voltage volts) {

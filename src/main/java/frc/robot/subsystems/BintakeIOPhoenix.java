@@ -106,7 +106,7 @@ public class BintakeIOPhoenix implements BintakeIO {
     }
 
     @Override
-    public void updateInputs(IntakeIOInputs inputs) {
+    public void updateInputs(BintakeIOInputs inputs) {
         BaseStatusSignal.refreshAll(statusSignals);
 
         
